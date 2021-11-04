@@ -7,5 +7,25 @@
 		<noscript>
 			<p>这个页面需要一个支持JavaScript的浏览器</p>
 		</noscript>
+		<script>
+			var scoops = 10;
+			while (scoops >= 0) {
+				if (scoops == 3) {
+					alert("冰淇凌快吃完了！");
+				} else if (scoops > 9) {
+					alert("吃快点，冰淇凌快要融化了！");
+				} else if (scoops == 2) {
+					alert("再吃一勺！");
+				} else if (scoops == 1) {
+					alert("再吃两勺！");
+				} else if (scoops == 0) {
+					alert("吃完了！");
+				} else {
+					alert("还有很多冰淇凌，来拿吧！");
+				}
+				scoops = scoops - 1;
+			}
+			alert("没有冰淇凌的生活是不一样的！");
+		</script>
 	</body>
 </html>
