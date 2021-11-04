@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<title>单词</title>
+		<meta charset="UTF-8">
+		<style>
+			body {
+				font-family: Verdana, Helvetica, sans-serif;
+			}
+		</style>
+		<script>
+			function makePhrases() {
+				var words1 = ["24/7", "多层", "30,000步", "端对端", "赢得胜利"];
+				var words2 = ["授权", "增值", "定向", "集中", "对齐"];
+				var words3 = ["过程", "解决方案", "引爆点", "战略", "远景"];
+				
+				var rand1 = Math.floor(Math.random() * words1.length);
+				var rand2 = Math.floor(Math.random() * words2.length);
+				var rand3 = Math.floor(Math.random() * words3.length);
+				
+				var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3];
+				var phraseElement = document.getElementById("phrase");
+				phraseElement.innerHTML = phrase;
+			}
+			window.onload = makePhrases;
+		</script>
+	</head>
+	<body>
+		<h1>随机单词：</h1>
+		<p id="phrase"></p>
+	</body>
+</html>

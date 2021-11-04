@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<title>我的播放列表</title>
+		<meta charset="UTF-8">
+		<script>
+			function addSongs() {
+				var song1 = document.getElementById("song1");
+				var song2 = document.getElementById("song2");
+				var song3 = document.getElementById("song3");
+				
+				song1.innerHTML = "《不为谁而作的歌》林俊杰";
+				song2.innerHTML = "《哪里都是你》队长";
+				song3.innerHTML = "《泡沫》邓紫棋";
+			}
+			window.onload = addSongs;
+		</script>
+	</head>
+	<body>
+		<h1>我的音乐播放列表</h1>
+		<ul id="playlist">
+			<li id="song1"></li>
+			<li id="song2"></li>
+			<li id="song3"></li>
+		</ul>
+	</body>
+</html>
